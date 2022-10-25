@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 6</h1>
+    <legend>Ejercicio sobre sumar impuestos a una persona depende su nacionalidad</legend>
+    <h4>Consigna</h4>
+    <p>Pasar por parámetro porcentaje de impuesto, si la persona no es de Argentina.<br> Si la persona es de Argentina, es el precio sin impuesto, pero si es de otro lugar, sumar al precio, el impuesto e imprimirlo por consola.</p>
+    <br>
+    <h3><i>Resultados por consola</i></h3>
+
+    <script>
+        function calcularPrecioTotal(precio,impuestos) {
+
+        
+        
+            let gastosEnvio = 40;
+            let precioTotal = parseInt(precio * impuestos)
+            precioTotal = precioTotal + gastosEnvio
+            console.log('La persona no es de Argentina y se le cobrara: ' + "$"+precioTotal + " con impuestos incluidos")
+
+
+            let precioTotal2 = parseInt(precio * impuestos)
+            
+            console.log('La persona es de Argentina y se le cobrara: ' + "$"+precioTotal2+ " sin impuestos incluidos" )
+
+}
+
+calcularPrecioTotal(35, 1.16);
+    </script>
+</body>
+</html>
+
+<!-- Pasar por parámetro porcentaje de impuesto, si la persona no es de Argentina. Si la persona es de Argentina, es el precio sin impuesto, pero si es de otro lugar, sumar al precio, el impuesto e imprimirlo por consola. -->
